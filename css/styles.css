@@ -877,10 +877,8 @@ img {
     
     min-width: 528px;
     min-height: 581px;
-    padding: 8px;
+    padding: 40px;
 
-    display: flex;
-    flex-direction: row-reverse;
     background-color: #FFFFFF;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -892,9 +890,14 @@ img {
 }
 
 .modal-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    
     width: 30px;
     height: 30px;
     padding: 6px;
@@ -906,5 +909,63 @@ img {
 .modal-close:hover {
     cursor: pointer;
 }
+
+.modal-p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+}
+
+.modal-form {
+    display: inline-block;
+}
+
+.form-input {
+    width: 448px;
+    height: 40px;
+}
+
+.form-textarea {
+    width: 448px;
+    height: 120px;
+    resize: none;
+}
+
+
+
+.modal-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 52px;
+
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border-radius: 4px;
+    border: none;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+}
+
+.modal-submit-containe {
+    width: 100%;
+    display: block;
+}
+
+
+
+
 
 
