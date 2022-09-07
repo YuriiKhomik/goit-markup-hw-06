@@ -925,6 +925,8 @@ img {
 }
 
 .form-input {
+    
+
     width: 448px;
     height: 40px;
     margin-bottom: 10px;
@@ -990,6 +992,23 @@ img {
     margin-bottom: 4px;
 }
 
+.form-field1 {
+    position: relative;
+}
+
+.modal-icon-container {
+    position: absolute;
+    display: flex;
+    outline: 1px solid red;
+}
+
+.modal-icon {
+    position: absolute;
+    top: 35px;
+    left: 12px;
+
+    outline: 1px solid red;
+}
 
 
 
