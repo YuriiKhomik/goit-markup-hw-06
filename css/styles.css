@@ -816,9 +816,13 @@ img {
 }
 
 .subscribe-button {
+    display: flex;
+    justify-content: center;
+
     width: 200px;
     height: 50px;
     margin-left: 12px;
+    padding: 10px 28px;
     background-color: var(--accent-color);
     border-radius: 4px;
     border: none;
@@ -831,6 +835,12 @@ img {
 
 .subscribe-button:hover {
     cursor: pointer;
+}
+
+.subscribe-icon {
+   fill: currentColor;
+   margin-left: 10px;
+   margin-top: 3px;
 }
 
 
