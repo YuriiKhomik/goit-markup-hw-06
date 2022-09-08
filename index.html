@@ -480,13 +480,17 @@
             <span class="form-label">Коментар</span>
             <textarea class="form-textarea" name="comment" rows="8" placeholder="Введіть текст"></textarea>
           </label>
+          
           <label class="form-field-agreement">
             <input class="checkbox" type="checkbox" name="agreement">
-            <p class="checkbox-p">Погоджуюся з розсилкою та приймаю <a class="agreement-link" href="">Умови договору</a>
-              <svg class="checked-icon">
+              <svg class="unchecked-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-check-black-1"></use>
+              </svg>
+              <svg class="checked-icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-icon-check6"></use>
               </svg>
-            </p>
+              <span class="checkbox-p">Погоджуюся з розсилкою та приймаю</span>
+              <a class="agreement-link" href="">Умови договору</a>
           </label>
         </form>
 

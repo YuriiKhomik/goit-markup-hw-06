@@ -904,10 +904,15 @@ img {
     background-color: #FFFFFF;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);;
+
+    cursor: pointer;
+
+    outline: transparent;
 }
 
-.modal-close:hover {
-    cursor: pointer;
+.modal-close:hover .modal-icon-close,
+.modal-close:focus .modal-icon-close {
+    fill: var(--accent-color);
 }
 
 .modal-p {
@@ -998,15 +1003,23 @@ img {
     position: relative;
 }
 
+.form-input:hover + .modal-icon,
+.form-input:focus + .modal-icon {
+    fill: var(--accent-color);
+}
+
 .modal-icon {
     position: absolute;
     top: 35px;
     left: 12px;
+    fill: var(--tittle-text-color);
 }
 
 
 
 .form-field-agreement {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1015,8 +1028,6 @@ img {
 }
 
 .checkbox {
-    position: relative;
-
     white-space: nowrap;
     width: 1px;
     height: 1px;
@@ -1028,27 +1039,32 @@ img {
     margin: -1px;
 }
 
-.checkbox:checked + .checkbox-icon {
-    border: 2px solid var(--accent-color);
-    background-color: var(--accent-color);
+.checkbox:checked > .checked-icon {
+    opacity: 1;
+}
+
+
+
+.checked-icon {
+    position: relative;
+    margin-right: 9px;
+    top: 0px;
 }
 
 .checked-icon {
     position: absolute;
-    top: 3px;
-    left: -23px;
-
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-
-    width: 16px;
-    height: 15px;
+    left: 0;
+    top: 4px;
+    margin-right: 9px;
+    opacity: 0;
 }
 
-.checkbox-p {
-    position: relative;
+.checkbox:checked + .unchecked-icon {
+    opacity: 0;
+}
 
+
+.checkbox-p {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
