@@ -1009,9 +1009,14 @@ img {
 .form-field-agreement {
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
 }
 
 .checkbox {
+    position: relative;
+
     white-space: nowrap;
     width: 1px;
     height: 1px;
@@ -1023,18 +1028,6 @@ img {
     margin: -1px;
 }
 
-.checkbox-icon {
-    position: relative;
-
-    box-sizing: border-box;
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    border-radius: 2px;
-    margin-right: 8px;
-    border: 2px solid #2a2a2a;
-}
-
 .checkbox:checked + .checkbox-icon {
     border: 2px solid var(--accent-color);
     background-color: var(--accent-color);
@@ -1042,16 +1035,27 @@ img {
 
 .checked-icon {
     position: absolute;
-    top: -1;
-    left: -10;
+    top: 3px;
+    left: -23px;
+
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    width: 16px;
+    height: 15px;
 }
 
 .checkbox-p {
+    position: relative;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+
+    margin-left: 23px;
 }
 
 .agreement-link {
