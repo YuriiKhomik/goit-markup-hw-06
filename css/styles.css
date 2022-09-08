@@ -780,6 +780,8 @@ img {
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+    outline: transparent;
 }
 
 .subscribe-field {
@@ -1027,6 +1029,9 @@ img {
     left: 12px;
     fill: var(--tittle-text-color);
     pointer-events: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus + .modal-icon,
@@ -1047,7 +1052,7 @@ img {
 }
 
 .checkbox {
-    /* white-space: nowrap;
+    white-space: nowrap;
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -1055,7 +1060,22 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    margin: -1px; */
+    margin: -1px;
+}
+
+.checkbox:checked + .modal-check {
+    background-color: var(--accent-color);
+    border-color: transparent;
+}
+
+.checkbox:checked + .modal-check .icon-checked {
+    opacity: 1;
+    
+} 
+
+.label-check {
+    display: flex;
+    align-items: center;
 }
 
 .checkbox-p {
@@ -1087,13 +1107,25 @@ img {
 .modal-check {
     display: flex;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 
+    margin-left: 13px;
     width: 16px;
     height: 15px;
     border: 2px solid var(--tittle-text-color);
-    border-radius: 3px;
+    border-radius: 2px;
 }
+
+.icon-checked {
+    fill: #FFFFFF;
+    opacity: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 
 
