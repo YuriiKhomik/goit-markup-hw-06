@@ -832,6 +832,7 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
     color: #FFFFFF;
 }
 
@@ -924,12 +925,16 @@ img {
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--tittle-text-color);
 
     margin-bottom: 12px;
 }
 
 .modal-form {
     display: inline-block;
+    width: 448px;
+    height: 342px;
+    margin-bottom: 20px;
 }
 
 .form-input {
@@ -954,7 +959,6 @@ img {
 .form-textarea {
     width: 448px;
     height: 120px;
-    margin-bottom: 20px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -1012,7 +1016,7 @@ img {
 
 .modal-submit-container {
     width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 .form-label {
@@ -1026,6 +1030,9 @@ img {
 
 .form-field {
     position: relative;
+    width: 448px;
+    height: 58px;
+    margin-bottom: 10px;
 }
 
 .modal-icon {
